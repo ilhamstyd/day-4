@@ -1,34 +1,29 @@
-function getData() {
+function getData(){
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let phone = document.getElementById("phone-number").value
+    let subject = document.getElementById("subject").value
+    let message = document.getElementById("msg").value
 
-    // get value from id in html
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let phoneNumber = document.getElementById('phone-number').value;
-    let subject = document.getElementById('subject').value;
-    let msg = document.getElementById('msg').value;
-
-    if (name,email,phoneNumber,subject,message = "") {
-        alert('Tolong data segera diisi')
-    } else{
-        alert('Data akan segera dikirim melalui email')
+        
+    const emailReceiver = "ilhamsetyadji28@gmail.com"
+    let a = document.createElement('a')
+    a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}
+    &su=${subject}&body=Halo Nama Saya ${name},pesan saya untuk kamu ${message}, bisakah anda menghubungi saya di ${phone}`
+    a.click();
+  
+    let data = {
+        nama: name,
+        email: email,
+        phone: phone,
+        subject: subject,
+        message: message,
     }
-
-    const emailReceive = 'ilhamsetyadji28@gmail.com';
     
-    let mailTo = document.createElement('a');
-    mailTo.href = `mailto:${emailReceive}?subject=${subject}&body=Halo nama saya ${name}, saya ingin ${msg}, bisakah anda menghubungi saya di ${phoneNumber}`
-    mailTo.click();
-
-    let show = {
-        name,
-        email,
-        phoneNumer,
-        subject,
-        msg
-    }
-    console.log(show);
-
+    console.table(data)
+    alert('kamu akan mengirim pesan ini ke email')
 }
+
 
 let blogs = []
 
