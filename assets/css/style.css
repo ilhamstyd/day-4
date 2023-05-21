@@ -8,7 +8,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 5vh;
-    background-color: #ecebeb;
+    background-color: white;
     padding: 12px 0 15px 75px;
 }
 
@@ -57,36 +57,41 @@ nav{
     font-weight: 500;
 }
 
+.right-nav a:hover {
+    background-color: #F5F5F5;
+    color: #131313;
+    border: 1px solid black;
+}
 
-.container{
+body{
     background-color: #dfe2e7;
-    padding: 5% 4%;
+}
+.container{
+    margin: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 5px grey;
+    
 }
 
 .card{
     background-color: #f3f3f3;
     display: flex;
     border-radius: 10px;
-    box-shadow: 0 0 30px #cacaca;
 }
 
 .left-card{
     width: 50%;
-    margin: 7% 5%;
-}
-
-.left-card h1{
-    margin-bottom: 10px;
-}
-
-.left-card p{
+    margin: 4% 6%;
     text-align: justify;
 }
 
+.left-card h1{
+    margin-bottom: 25px;
+}
+
 .cv{
-    display: flex;
-    margin-top: 35px;
-    align-items: center;
+    margin: 50px 0;
+    
 }
 
 #contact{
@@ -112,7 +117,6 @@ nav{
 }
 
 .icon{
-    margin-top: 35px;
     display: flex;
     justify-content:flex-start;
 }
@@ -143,7 +147,7 @@ nav{
 
 .right-card img{
     width: 300px;
-    height: 430px;
+    height: 370px;
 }
 
 .right-card h3{
