@@ -61,12 +61,12 @@ function getProject(e) {
   //validation
   if (projectName == "") {
     return alert("Tolong isi bagian nama projek anda");
-  } else if (startDate && endDate == "") {
+  } else if (startDate == "") {
+    return alert("Tolong masukkan tanggal yang sesuai");
+  } else if (endDate == "") {
     return alert("Tolong masukkan tanggal yang sesuai");
   } else if (desc == "") {
     return alert("Tolong masukkan deskripsi dengan benar");
-  } else if (nodeJS && reactJS && python && golang == "") {
-    return alert("Tolong pilh salah satu");
   } else {
     alert("Segera ditampilkan");
   }
