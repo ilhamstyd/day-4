@@ -9,7 +9,7 @@ nav{
     justify-content: space-between;
     height: 5vh;
     background-color: white;
-    padding: 12px 0 15px 75px;
+    padding: 12px 0 12px 55px;
 }
 
 .left-nav{
@@ -53,8 +53,9 @@ nav{
     color: #ffff;
     background-color: #000;
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 3px 10px;
     font-weight: 500;
+    font-size: medium;
 }
 
 .right-nav a:hover {
@@ -68,8 +69,7 @@ body{
 }
 .container{
     margin: 50px;
-    border-radius: 50px;
-    box-shadow: 1px 3px 5px grey;
+    border-radius: 10px;
     
 }
 
@@ -77,6 +77,7 @@ body{
     background-color: #f3f3f3;
     display: flex;
     border-radius: 10px;
+    box-shadow: 1px grey;
 }
 
 .left-card{

@@ -4,26 +4,32 @@ function getData() {
     let email = document.getElementById("email").value;
     let phoneNumber = document.getElementById("phone-number").value;
     let subject = document.getElementById("subject").value;
-    let msg = document.getElementById("msg").value;
+    let message = document.getElementById("msg").value;
   
-    if ((name, email, phoneNumber, subject, (message = ""))) {
-      alert("Tolong data segera diisi");
-    } else {
-      alert("Data akan segera dikirim melalui email");
-    }
+    if (name == ""){
+      return alert("isi nama anda")
+    } else if (email == ""){
+      return alert("isi email anda")
+    } else if (phoneNumber == ""){
+      return alert("isi no hp anda")
+    } else if (subject == ""){
+      return alert("pilih subject anda")
+    } else if (message == ""){
+      return alert ("isi pesan anda!")
+    } 
   
     const emailReceive = "ilhamsetyadji28@gmail.com";
   
-    let mailTo = document.createElement("a");
-    mailTo.href = `mailto:${emailReceive}?subject=${subject}&body=Halo nama saya ${name}, saya ingin ${msg}, bisakah anda menghubungi saya di ${phoneNumber}`;
-    mailTo.click();
+    let gmailTo = document.createElement("a");
+    gmailTo.href = `mailto:${emailReceive}?subject=${subject}&body=Halo nama saya ${name}, saya ingin ${message}, bisakah anda menghubungi saya di ${phoneNumber}`;
+    gmailTo.click();
   
     let flex = {
       name,
       email,
-      phoneNumer,
+      phoneNumber,
       subject,
-      msg,
+      message,
     };
     console.log(flex);
   }
@@ -113,7 +119,6 @@ function getProject(e) {
     python,
     golang,
     author: "Ilham",
-    postedAt: new Date(),
   };
 
   blogs.push(dataProject);
@@ -130,10 +135,10 @@ function showProject() {
                 <div class="card-project">
                     <div class="content">
                         <img src=${blogs[i].upImg} alt="image">
-                        <a href="add-project-detail.html"><h4>${
+                        <a href="add-project-detail.html" target="_blank"><h4>${
                           blogs[i].projectName
                         }</h4></a>
-                        <div class="detail-blog-content">${blogs[i].duration}</div>
+                        <div class="detail-blog-content">${blogs[i].duration} | ${blogs[i].author} </div>
                         <div class="text">
                             <p>${blogs[i].desc}</p>
                         </div>
@@ -153,7 +158,6 @@ function showProject() {
                 </div>
                 
             </main>
-            <footer>Kosongan</footer>
         </div>
         `;
   }

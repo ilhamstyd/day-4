@@ -31,18 +31,19 @@
 }
   
 .left-item img{
-  height:350px;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .right-item { 
   grid-area: right; 
+  margin-left: 40px;
 }
 
 .duration{
   display: flex;
   align-items: center;
-  margin-top: 10px;
 }
 
 .duration i{

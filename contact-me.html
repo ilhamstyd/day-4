@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web | Contact Me</title>
 
+    <!-- web icon -->
+    <link rel="website icon" href="./assets/images/logo.png">
+
     <!-- font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -27,7 +30,7 @@
             <img src="./assets/images/logo.png" alt="">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="addProject.html">My Project</a></li>
+                <li><a href="#">My Project</a></li>
             </ul>
         </div>
 
@@ -37,7 +40,7 @@
     </nav>
     <!-- end navbar -->
 
-    <form action="">
+    <form>
         <div class="container-form">
             <h1>Get in touch</h1>
 
@@ -53,12 +56,13 @@
             </div>
             <div class="phoneNumber">
                 <label for="phone-number">Phone Number
-                    <input type="text" id="phone-number" placeholder="input your phone number" value="" required>
+                    <input type="number" id="phone-number" placeholder="input your phone number" value="" required>
                 </label>
             </div>
             <div class="subject">
                 <label for="subject">Subject
                     <select name="Subject" id="subject">
+                        <option value="" hidden>please choose</option>
                         <option value="golang">golang</option>
                         <option value="c++">c++</option>
                         <option value="python">python</option>
